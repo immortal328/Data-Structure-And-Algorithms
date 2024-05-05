@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Data-Structure-And-Algorithms
+Bundle-SymbolicName: Data-Structure-And-Algorithms
+Bundle-Version: 1.0.0.qualifier
+Automatic-Module-Name: Data.Structure.And.Algorithms
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
