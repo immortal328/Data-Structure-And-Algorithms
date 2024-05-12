@@ -19,6 +19,9 @@ public class LinkedList {
 		}		
 	}
 	
+	/**
+	 * Removes Node From LinkedList
+	 * */
 	public void removeNode(int targetData) throws Exception {
 		Node temp = head;
 		if(head.data == targetData) {
