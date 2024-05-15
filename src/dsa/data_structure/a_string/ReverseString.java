@@ -1,6 +1,6 @@
 package dsa.data_structure.a_string;
 
-public class reverseString {
+public class ReverseString {
 	public static void main(String[] args) {
 		
 		String str = "Amar";
