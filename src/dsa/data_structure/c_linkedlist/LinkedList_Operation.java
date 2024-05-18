@@ -1,12 +1,17 @@
 package dsa.data_structure.c_linkedlist;
 
-import dsa.a_models.LinkedList;
 import dsa.a_models.Node;
 
-public class SinglyLinkedList {
+public class LinkedList_Operation {
 	public static void main(String[] args) {
 		int[] array = {1,2,3,4,5,6,7,8,9,10};
-		LinkedList linkedlist = new LinkedList();		
+		LinkedList linkedlist = new LinkedList();
+		
+		//SinglyLinkedList
+		singlyLinkedListOperation(linkedlist,array);
+	}
+	
+	public static void singlyLinkedListOperation(LinkedList linkedlist, int[] array) {
 		for(int data : array) {
 			linkedlist.addNode(new Node(data));
 		}
@@ -43,5 +48,5 @@ public class SinglyLinkedList {
 		}
 
 	}
-
+	
 }

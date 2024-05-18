@@ -1,4 +1,6 @@
-package dsa.a_models;
+package dsa.data_structure.c_linkedlist;
+
+import dsa.a_models.Node;
 
 public class LinkedList {
 	private Node head = null;
