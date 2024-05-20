@@ -1,5 +1,6 @@
 package dsa.data_structure.c_linkedlist;
 
+import dsa.a_models.DoubleNode;
 import dsa.a_models.Node;
 
 public class LinkedList_Operation {
@@ -9,15 +10,38 @@ public class LinkedList_Operation {
 			int[] array = {1,2,3,4,5,6,7,8,9,10};
 			LinkedList linkedlist = new LinkedList();
 			CircularLinkedList circularLinkedList = new CircularLinkedList();
+			DoublyLinkedList doublyLinkedList = new DoublyLinkedList();
 			
-			//SinglyLinkedList
+			
 			//singlyLinkedListOperation(linkedlist,array);
-			circularLinkedListOperation(circularLinkedList,array);			
+			//circularLinkedListOperation(circularLinkedList,array);
+			DoublyLinkedListOperation(doublyLinkedList,array);
+			
 		}catch(Exception ex) {
 			System.out.println(ex);			
 		}
 		
 		
+	}
+	
+	public static void DoublyLinkedListOperation(DoublyLinkedList doublyLinkedList, int[] arr) {
+		for(int data : arr) {
+			doublyLinkedList.addNode(new DoubleNode(data));
+		}
+		doublyLinkedList.printLinkedList();
+		doublyLinkedList.addAtStart(new DoubleNode(0));
+		doublyLinkedList.printLinkedList();
+		doublyLinkedList.addNodeAtPosition(2, new DoubleNode(-1));
+		doublyLinkedList.printLinkedList();
+		doublyLinkedList.removeNodeByData(2);
+		doublyLinkedList.printLinkedList();
+		doublyLinkedList.addNodeAtPosition(7, new DoubleNode(-5));
+		doublyLinkedList.printLinkedList();
+		doublyLinkedList.removeNodeAtPosition(2);
+		doublyLinkedList.printLinkedList();
+		doublyLinkedList.removeNodeAtPosition(3);
+		doublyLinkedList.printLinkedList();
+	
 	}
 	
 	//Operation perform on Circular LinkedList
