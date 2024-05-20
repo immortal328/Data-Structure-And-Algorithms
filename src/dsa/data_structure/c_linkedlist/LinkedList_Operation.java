@@ -4,19 +4,41 @@ import dsa.a_models.Node;
 
 public class LinkedList_Operation {
 	public static void main(String[] args) {
-		int[] array = {1,2,3,4,5,6,7,8,9,10};
-		LinkedList linkedlist = new LinkedList();
 		
-		//SinglyLinkedList
-		singlyLinkedListOperation(linkedlist,array);
+		try {
+			int[] array = {1,2,3,4,5,6,7,8,9,10};
+			LinkedList linkedlist = new LinkedList();
+			CircularLinkedList circularLinkedList = new CircularLinkedList();
+			
+			//SinglyLinkedList
+			//singlyLinkedListOperation(linkedlist,array);
+			circularLinkedListOperation(circularLinkedList,array);			
+		}catch(Exception ex) {
+			System.out.println(ex);			
+		}
+		
+		
 	}
 	
-	public static void singlyLinkedListOperation(LinkedList linkedlist, int[] array) {
+	//Operation perform on Circular LinkedList
+	public static void circularLinkedListOperation(CircularLinkedList circularLisnkedList, int[] arr) throws Exception {
+		for(int data : arr) {
+			circularLisnkedList.addNode(new Node(data));
+		}		
+		circularLisnkedList.removeNode(5);
+		circularLisnkedList.addNodeAtPosition(new Node(0),1);
+		circularLisnkedList.addNodeAtPosition(new Node(-2),3);
+		circularLisnkedList.addNodeAtPosition(new Node(-3),5);
+		circularLisnkedList.printLinkedList(arr.length);
+		circularLisnkedList.removeNode(11);
+	}
+	
+	//Operation peforme on singlly LinkedLisy
+	public static void singlyLinkedListOperation(LinkedList linkedlist, int[] array) throws Exception {
 		for(int data : array) {
 			linkedlist.addNode(new Node(data));
 		}
-		try {
-
+		
 		// Adding Node at End
 		linkedlist.addNode(new Node(11));
 		linkedlist.printLinkedList(linkedlist.size());
@@ -43,9 +65,6 @@ public class LinkedList_Operation {
 		
 		//Removing Node -12, Will throw Exception boz Node 12 Non present in linkedList
 		linkedlist.removeNode(-11);
-		}catch(Exception ex) {
-			System.out.println(ex);			
-		}
 
 	}
 	
