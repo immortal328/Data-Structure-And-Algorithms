@@ -7,15 +7,10 @@ public class LinkedList_Operation {
 	public static void main(String[] args) {
 		
 		try {
-			int[] array = {1,2,3,4,5,6,7,8,9,10};
-			LinkedList linkedlist = new LinkedList();
-			CircularLinkedList circularLinkedList = new CircularLinkedList();
-			DoublyLinkedList doublyLinkedList = new DoublyLinkedList();
-			
-			
-			//singlyLinkedListOperation(linkedlist,array);
-			//circularLinkedListOperation(circularLinkedList,array);
-			DoublyLinkedListOperation(doublyLinkedList,array);
+			int[] array = {1,2,3,4,5,6,7,8,9,10};			
+			//singlyLinkedListOperation(array);
+			//circularLinkedListOperation(array);
+			DoublyLinkedListOperation(array);
 			
 		}catch(Exception ex) {
 			System.out.println(ex);			
@@ -24,7 +19,8 @@ public class LinkedList_Operation {
 		
 	}
 	
-	public static void DoublyLinkedListOperation(DoublyLinkedList doublyLinkedList, int[] arr) {
+	public static void DoublyLinkedListOperation( int[] arr) {		
+		DoublyLinkedList doublyLinkedList = new DoublyLinkedList();
 		for(int data : arr) {
 			doublyLinkedList.addNode(new DoubleNode(data));
 		}
@@ -45,7 +41,8 @@ public class LinkedList_Operation {
 	}
 	
 	//Operation perform on Circular LinkedList
-	public static void circularLinkedListOperation(CircularLinkedList circularLisnkedList, int[] arr) throws Exception {
+	public static void circularLinkedListOperation(int[] arr) throws Exception {
+		CircularLinkedList circularLisnkedList = new CircularLinkedList();
 		for(int data : arr) {
 			circularLisnkedList.addNode(new Node(data));
 		}		
@@ -58,7 +55,9 @@ public class LinkedList_Operation {
 	}
 	
 	//Operation peforme on singlly LinkedLisy
-	public static void singlyLinkedListOperation(LinkedList linkedlist, int[] array) throws Exception {
+	public static void singlyLinkedListOperation(int[] array) throws Exception {
+		LinkedList linkedlist = new LinkedList();
+
 		for(int data : array) {
 			linkedlist.addNode(new Node(data));
 		}

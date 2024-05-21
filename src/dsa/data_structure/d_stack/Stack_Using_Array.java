@@ -1,15 +1,10 @@
 package dsa.data_structure.d_stack;
 
-import java.util.Scanner;
-
 public class Stack_Using_Array {
 	public int[] arr;
 	public int top =0;
 	
-	public Stack_Using_Array() {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Give the size for array :");
-		int size = sc.nextInt();
+	public Stack_Using_Array(int size) {
 		arr = new int[size];
 	}
 	
