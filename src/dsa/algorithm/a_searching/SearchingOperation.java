@@ -1,6 +1,11 @@
 package dsa.algorithm.a_searching;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
+
 
 public class SearchingOperation {
 	public static void main(String[] args) {
@@ -10,6 +15,9 @@ public class SearchingOperation {
 		binarySearchOperation(arr,10);
 		binarySearchOperation(arr,11);
 		binarySearchOperation(arr,0);
+
+		//binarySearchOperation(arr,7);
+		sortUsingComparitor(arr);
 	}
 	
 	public static void binarySearchOperation(int[] arr,int target) {
@@ -24,5 +32,23 @@ public class SearchingOperation {
 		}else {
 			System.out.println("Element Present at Index : -> "+index);
 		}		
+	}
+	
+	public static void sortUsingComparitor(int[] arr) {
+		
+		List<Integer>  list = new ArrayList<>();		
+		list.add(8);
+		list.add(10);
+		list.add(11);
+		list.add(3);
+		list.add(7);
+		list.add(1);
+		
+		list.forEach(i->System.out.print(i+" "));
+		System.out.println();
+		System.out.println("Sorted in ASC order "+list.stream().sorted((num1,num2)->num1.compareTo(num2)).collect(Collectors.toList()));		
+		System.out.println("Sorted in DESC order "+list.stream().sorted((num1,num2)->num2.compareTo(num1)).collect(Collectors.toList()));
+		
+		
 	}
 }
