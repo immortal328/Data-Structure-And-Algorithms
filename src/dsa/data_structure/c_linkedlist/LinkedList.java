@@ -5,6 +5,14 @@ import dsa.a_models.Node;
 public class LinkedList {
 	private Node head = null;
 	
+	public Node getHead() {
+		return this.head;
+	}
+	
+	public void setHead(Node head) {
+		this.head = head;		
+	}
+	
 	/**
 	 *This Method always add Node at the End
 	 *@param Node data
