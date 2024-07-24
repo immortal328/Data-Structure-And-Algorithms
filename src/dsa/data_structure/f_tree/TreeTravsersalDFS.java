@@ -16,24 +16,24 @@ public class TreeTravsersalDFS {
 		tree.insert(new TreeNode(6));
 		tree.insert(new TreeNode(8));
 		
-		printPreOrder(tree);
-		printInOrder(tree);
-		printPostOrder(tree);
+		preOrder(tree);
+		inOrder(tree);
+		postOrder(tree);
 	}
 	
-	public static void printPreOrder(Tree tree) {
+	public static void preOrder(Tree tree) {
 		System.out.print("Pre Order : ");
 		tree.preOrder(tree.root);
 		System.out.println();
 	}
 	
-	public static void printInOrder(Tree tree) {
+	public static void inOrder(Tree tree) {
 		System.out.print("In  Order : ");
 		tree.inOrder(tree.root);
 		System.out.println();
 	}
 
-	public static void printPostOrder(Tree tree) {
+	public static void postOrder(Tree tree) {
 		System.out.print("PostOrder : ");
 		tree.postOrder(tree.root);	
 		System.out.println();
