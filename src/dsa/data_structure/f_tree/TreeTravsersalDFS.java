@@ -1,7 +1,8 @@
 package dsa.data_structure.f_tree;
 
-public class TreeOperation {
+public class TreeTravsersalDFS {
 	public static void main(String[] args) {
+		System.out.println("DFS Tree Traversal :- ");
 		operations();		
 	}
 	
@@ -18,7 +19,6 @@ public class TreeOperation {
 		printPreOrder(tree);
 		printInOrder(tree);
 		printPostOrder(tree);
-		
 	}
 	
 	public static void printPreOrder(Tree tree) {

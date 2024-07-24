@@ -9,7 +9,6 @@ public class Tree {
 
 	/**
 	 * Method to add Node In Tree.
-	 * 
 	 * @param TreeNode
 	 */
 	public void insert(TreeNode node) {
