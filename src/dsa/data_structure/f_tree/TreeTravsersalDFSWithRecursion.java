@@ -1,8 +1,22 @@
 package dsa.data_structure.f_tree;
 
-public class TreeTravsersalDFS {
+public class TreeTravsersalDFSWithRecursion {
 	public static void main(String[] args) {
 		System.out.println("DFS Tree Traversal :- ");
+		/**
+		 * 				5
+		 * 			   / \
+		 *            /   \
+		 *           /     \
+		 * 			3	    7
+		 *         / \     / \
+		 * 		  2   4   6	  8
+		 * 
+		 * PreOrder  : 5 3 2 4 7 6 8
+		 * InOrder   : 2 3 4 5 6 7 8
+		 * PostOrder : 2 4 3 6 8 7 5
+		 * 
+		 * */
 		operations();		
 	}
 	
