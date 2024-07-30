@@ -9,7 +9,7 @@ public class DoublyLinkedList {
 		this.head = null;
 	}
 	
-	void addNodeAtPosition(int position,DoubleNode node) {
+	public void addNodeAtPosition(int position,DoubleNode node) {
 		System.out.println("Adding Node"+node.data+" at index : "+position);
 		int index =1;
 		DoubleNode temp = head;
@@ -28,7 +28,7 @@ public class DoublyLinkedList {
 		}
 	}
 	
-	void addNode(DoubleNode data) {
+	 public void addNode(DoubleNode data) {
 		DoubleNode temp = head;
 		if(temp == null) {
 			head = data;
@@ -41,14 +41,14 @@ public class DoublyLinkedList {
 		}		
 	}
 	
-	void addAtStart(DoubleNode data) {
+	public void addAtStart(DoubleNode data) {
 		System.out.println("Adding element at start");
 		data.next=head;
 		head.prev = data;
 		head=data;
 	}
 	
-	void removeNodeByData(int data) {
+	public void removeNodeByData(int data) {
 		System.out.println("removing Node by data : "+data);
 
 		DoubleNode temp =head;
@@ -67,7 +67,7 @@ public class DoublyLinkedList {
 		
 	}
 	
-	void removeNodeAtPosition(int position) {
+	public void removeNodeAtPosition(int position) {
 		System.out.println("removing Node at index : "+position);
 		DoubleNode temp =head;
 		int index =1;
@@ -89,7 +89,7 @@ public class DoublyLinkedList {
 		
 	}
 	
-	void printLinkedList() {
+	public void printLinkedList() {
 		DoubleNode temp = head;
 		System.out.print(temp.prev+"=");
 		while(temp.next != null) {
