@@ -3,7 +3,7 @@ package dsa.data_structure.c_linkedlist.problems;
 import dsa.a_models.Node;
 import dsa.data_structure.c_linkedlist.LinkedList;
 
-public class PrintMiddleOfLinkedList {
+public class APrintMiddleOfLinkedList {
 
 	public static void main(String[] args) {
 		LinkedList ll = new LinkedList();
