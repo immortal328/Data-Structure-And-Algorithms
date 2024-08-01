@@ -5,9 +5,19 @@ import dsa.a_models.DoubleNode;
 public class DoublyLinkedList {
 	private DoubleNode head;
 	
+	public DoubleNode getHead() {
+		return this.head;
+	}
+	
+	public void setHead(DoubleNode node) {
+		this.head=node;
+	}
+	
 	public DoublyLinkedList() {
 		this.head = null;
 	}
+	
+	
 	
 	public void addNodeAtPosition(int position,DoubleNode node) {
 		System.out.println("Adding Node"+node.data+" at index : "+position);
@@ -97,13 +107,6 @@ public class DoublyLinkedList {
 			temp = temp.next;
 		}
 		System.out.print("["+temp.data+"]"+"="+temp.next+"\n");
-		
-		System.out.print(temp.next+"=");
-		while(temp.prev != null) {
-			System.out.print("["+temp.data+"]"+"=");
-			temp = temp.prev;
-		}
-		System.out.print("["+temp.data+"]"+"="+temp.prev+"\n\n");
 	}
 	
 
