@@ -3,7 +3,7 @@ package dsa.data_structure.c_linkedlist.problems;
 import dsa.a_models.Node;
 import dsa.data_structure.c_linkedlist.LinkedList;
 
-public class DPrintNthNodeFromEnd {
+public class Problem4PrintNthNodeFromEnd {
 	public static void main(String[] args) {
 		LinkedList ll = new LinkedList();
 		ll.addNode(new Node(1));

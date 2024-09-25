@@ -3,7 +3,7 @@ package dsa.data_structure.c_linkedlist.problems;
 import dsa.a_models.Node;
 import dsa.data_structure.c_linkedlist.LinkedList;
 
-public class BReverseSingllyLinkedList {
+public class Problem2ReverseSingllyLinkedList {
 
 	public static void main(String[] args) {
 		reserseSingllyLinkedList();

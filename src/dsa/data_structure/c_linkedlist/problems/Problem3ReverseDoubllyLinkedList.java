@@ -3,7 +3,7 @@ package dsa.data_structure.c_linkedlist.problems;
 import dsa.a_models.DoubleNode;
 import dsa.data_structure.c_linkedlist.DoublyLinkedList;
 
-public class CReverseDoubllyLinkedList {
+public class Problem3ReverseDoubllyLinkedList {
 
 	public static void main(String[] args) {
 		DoublyLinkedList dll = new DoublyLinkedList();
