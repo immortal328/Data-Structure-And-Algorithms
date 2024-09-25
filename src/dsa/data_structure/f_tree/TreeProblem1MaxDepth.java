@@ -1,6 +1,6 @@
 package dsa.data_structure.f_tree;
 
-public class TreeMaxDepth {
+public class TreeProblem1MaxDepth {
 
 	public static void main(String[] args) {
 		/**
@@ -11,10 +11,8 @@ public class TreeMaxDepth {
 		 * 			3	    7
 		 *         / \     / \
 		 * 		  2   4   6	  8
-		 * 
-		 * 
 		 * */
-		operations();		
+		operations();
 	}
 	
 	public static void operations() {
@@ -27,6 +25,8 @@ public class TreeMaxDepth {
 		tree.insert(new TreeNode(6));
 		tree.insert(new TreeNode(8));
 		tree.insert(new TreeNode(1));
+//		tree.insert(new TreeNode(-1));
+//		tree.insert(new TreeNode(9));
 		
 		System.out.println("Maximum Height of tree is : "+maxDepth(tree.root));
 	}

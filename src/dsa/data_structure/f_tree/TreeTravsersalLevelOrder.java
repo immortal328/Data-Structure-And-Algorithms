@@ -47,8 +47,7 @@ public class TreeTravsersalLevelOrder {
 		
 		while(!queue.isEmpty()) {
 			List<Integer> order = new LinkedList<>();
-			int size = queue.size();
-			for(int i=0;i<size;i++) {
+			for(int i=0;i<queue.size();i++) {
 				if(queue.peek().left != null){queue.add(queue.peek().left);}
 				if(queue.peek().right != null){queue.add(queue.peek().right);}
 				order.add(queue.poll().data);				
